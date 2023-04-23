@@ -1,0 +1,156 @@
+@import './colors';
+
+.main-banner-wrapper {
+  background-image: url('../public/img/main-banner/main-banner-background.svg');
+  background-size: cover;
+  background-position: center;
+
+  .main-banner-background {
+    padding: 11.52vw 11.19% 0;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    opacity: 0.9;
+
+    .main-banner {
+      max-width: 1170px;
+      margin: auto;
+
+      &__secondary-title {
+        color: $white-color;
+      }
+
+      &__title {
+        color: $white-color;
+        margin-bottom: 2.74vw;
+      }
+
+      &__separator {
+        @extend %separator;
+        width: 14.53%;
+        background-color: $white-color;
+      }
+
+      &__btn {
+        width: 31.62%;
+        margin: 4.6vw auto 7.3vw;
+        padding: 22px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        background-color: transparent;
+        color: $white-color;
+        text-align: center;
+        border: 4px solid $white-color;
+
+        &:hover {
+          background-color: $white-color;
+          color: $main-button-hover-color;
+        }
+
+        &:active {
+          background-color: $white-color;
+          color: $main-button-hover-color;
+          border: 4px solid $main-button-hover-color;
+        }
+      }
+
+      &__slider {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      &__slide {
+        width: calc((100% - 90px)/4);
+        font-size: 18px;
+        font-weight: 500;
+        color: $secondary-color;
+        border-top: 4px solid $secondary-color;
+        padding: 22px 0;
+
+        span {
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 41px;
+        }
+
+        &_active {
+          color: $white-color;
+          border-top: 4px solid $white-color;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 25.93%;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            top: -4px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-banner-wrapper {      
+    .main-banner-background {
+      .main-banner {
+        &__btn {
+          padding: 12px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        &__slide {
+          width: calc((100% - 20px)/4);
+          font-size: 14px;
+          padding: 21px 0;
+        }
+        span {
+          font-size: 24px;
+          line-height: 16px;
+        }
+      }
+    }
+  }  
+}
+
+@media (max-width: 790px) {
+  .main-banner-wrapper {      
+    .main-banner-background {
+      padding: 90px 16px 0;
+
+      .main-banner {
+        &__title {
+          margin-bottom: 0;
+        }
+
+        &__separator {
+          width: 41.875vw;
+        }
+
+        &__btn {
+          width: 100%;
+          margin: 49px auto 54px;
+          padding: 12px;
+          font-size: 18px;
+        }
+      
+        &__slide {
+          font-size: 0px;
+          color: $secondary-color;
+          padding: 24px 0;
+          span {
+            font-size: 0px;
+            line-height: 42px;
+          }
+
+          &_active::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

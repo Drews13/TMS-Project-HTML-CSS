@@ -21,42 +21,78 @@ h1 {
   font-family: Montserrat;
   font-size: 144px;
   font-weight: 700;
-  line-height: 175px;
+  line-height: 185px;
+  text-align: center;
 }
 
 h2 {
+  font-family: KaushanScript;
   font-size: 64px;
   font-weight: 400;
   line-height: 80px;
+  text-align: center;
 }
 
 h3 {
   font-size: 36px;
   font-weight: 900;
   line-height: 41px;
+  text-align: center;
 }
 
 h4 {
   font-family: KaushanScript;
   font-size: 30px;
   font-weight: 400;
-  line-height: 44px;  
+  line-height: 44px;
+  text-align: center; 
 }
 
 h5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  text-align: center;
 }
 
 h6 {
   font-size: 13px;
   font-weight: 400;
   line-height: 15px;
+  text-align: center;
 }
 
 p {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 96px;
+    line-height: 125px;
+  }
+  
+  h2 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 48px;
+    line-height: 87.5px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+}
+
+%separator {
+  max-width: 170px;
+  height: 4px;
+  margin: auto;
 }

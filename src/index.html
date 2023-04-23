@@ -4,20 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favicon/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 <body>
   <div class="header-wrapper">
     <header class="header">
+      <img src="./public/img/header/logo.svg" class="header__logo">
+      <input type="checkbox" id="burger" class="header__burger-checkbox">
+      <label class="header__burger" for="burger">
+        <img src="./public/img/header/burger.svg">
+      </label>
+      <label class="header__cross" for="burger">
+        <img src="./public/img/header/cross.svg">
+      </label>
+      <nav class="header__navbar">
+        <ul class="header__links-list">
+          <li class="header__link header__link_active">ABOUT</li>
+          <li class="header__link">SERVICE</li>
+          <li class="header__link">WORK</li>
+          <li class="header__link">BLOG</li>
+          <li class="header__link">CONTACT</li>
+        </ul>
+        <img src="./public/img/header/cart-icon.svg" class="header__link-icon">
+        <img src="./public/img/header/search-icon.svg" class="header__link-icon">
+      </nav>
     </header>
   </div>
   <div class="content-wrapper">
     <div class="content">
+      <div class="main-banner-wrapper">
+        <div class="main-banner-background">
+          <section class="main-banner">
+            <h2 class="main-banner__secondary-title">
+              Creative Template
+            </h2>
+            <h1 class="main-banner__title">
+              WELCOME TO MOGO
+            </h1>
+            <div class="main-banner__separator">
+            </div>
+            <button class="main-banner__btn">
+              LEARN MORE
+            </button>
+            <ul class="main-banner__slider">
+              <li class="main-banner__slide main-banner__slide_active">
+                <span>01</span> INTRO
+              </li>
+              <li class="main-banner__slide">
+                <span>02</span> WORK
+              </li>
+              <li class="main-banner__slide">
+                <span>03</span> ABOUT
+              </li>
+              <li class="main-banner__slide">
+                <span>04</span> CONTACTS
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-wrapper">
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h6 class="footer__copyright">COPYRIGHT © 2021 MOGO. ALL RIGHTS RESERVED</h6>
+    </footer>
   </div>
 </body>
 </html>
