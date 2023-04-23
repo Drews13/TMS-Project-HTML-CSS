@@ -11,8 +11,7 @@
     opacity: 0.9;
 
     .main-banner {
-      max-width: 1170px;
-      margin: auto;
+      @extend %limiting-container;
 
       &__secondary-title {
         color: $white-color;

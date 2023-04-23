@@ -1,3 +1,16 @@
+@import "./colors";
+
+%separator {
+  max-width: 170px;
+  height: 4px;
+  margin: auto;
+}
+
+%limiting-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
 @font-face {
   font-family: Raleway;
   src: url(../public/fonts/Raleway-Regular.ttf);;
@@ -68,6 +81,27 @@ p {
   line-height: 21px;
 }
 
+.section {
+  &__secondary-title {
+    padding: 18px 0;
+  }
+
+  &__title {
+    padding: 20px 0;
+    margin-bottom: 24px;
+  }
+
+  &__separator {
+    @extend %separator;
+    background-color: $primary-color;
+  }
+
+  &__desc {
+    padding: 38px 0;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1024px) {
   h1 {
     font-size: 96px;
@@ -78,9 +112,42 @@ p {
     font-size: 48px;
     line-height: 54px;
   }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .section {
+    &__secondary-title {
+      padding: 16px 0;
+    }
+  
+    &__title {
+      margin-bottom: 20px;
+    }
+  
+    &__separator {
+      max-width: 148px;
+    }
+  
+    &__desc {
+      padding: 33.5px 0;
+    }
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 790px) {
   h1 {
     font-size: 48px;
     line-height: 87.5px;
@@ -89,10 +156,14 @@ p {
   h2 {
     font-size: 36px;
   }
-}
 
-%separator {
-  max-width: 170px;
-  height: 4px;
-  margin: auto;
+  .section {
+    &__separator {
+      max-width: 134px;
+    }
+  
+    &__desc {
+      padding: 34px 0;
+    }
+  }
 }

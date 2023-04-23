@@ -10,8 +10,7 @@
   padding: 0 16px;
 
   .header {
-    max-width: 1170px;
-    margin: auto;
+    @extend %limiting-container;
     display: flex;
     justify-content: space-between;
 
@@ -109,6 +108,10 @@
 
 @media (max-width: 790px) {
   .header-wrapper {
+    &:has(.header__burger-checkbox:checked) {
+      position: fixed;
+    }
+
     .header {
       &__logo {
         max-height: 56px;

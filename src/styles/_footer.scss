@@ -4,8 +4,7 @@
   padding: 0 16px;
 
   .footer {
-    max-width: 1170px;
-    margin: auto;
+    @extend %limiting-container;
     border-top: 1px solid $border-color;
 
     &__copyright {
