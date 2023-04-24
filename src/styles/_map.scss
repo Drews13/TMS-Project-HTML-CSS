@@ -1,0 +1,46 @@
+.map-wrapper {
+  background-image: url("../public/img/map/unsplash_x3REnO9z7io.svg");
+  background-size: cover;
+  background-position: center;
+
+  &-background {
+    padding: 2.74vw 16px;
+    background-color: $map-background;
+  }
+
+  .map {
+    @extend %limiting-container;
+
+    &__icon {
+      margin: auto;
+    }
+
+    &__title {
+      color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .map-wrapper {
+    .map {
+      &__icon {
+        max-width: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .map-wrapper {
+    &-background {
+      padding: 42px 16px;
+    }
+      
+    .map {
+      &__icon {
+        min-width: 42px;
+      }
+    }
+  }
+}
