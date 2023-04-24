@@ -1,0 +1,160 @@
+.our-team-wrapper {
+  padding: 5.53vw 16px ;
+
+  .our-team {
+    @extend %limiting-container;
+
+    &__header {
+      margin-bottom: 58px;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__column {
+      width: calc((100% - 60px) / 3);
+    }
+
+    &__img-container {
+      position: relative;
+    }
+
+    &__img {
+      width: 100%;
+
+      &:hover + .our-team__square{
+        display: block;
+      }
+    }
+
+    &__square {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: $primary-gradient;
+      position: absolute;
+      top: -16px;
+      left: -16px;
+
+      &:hover {
+        display: block;
+      }
+    }
+
+    &__socials {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__icon {
+      width: 11.35%;
+      cursor: pointer;
+    }
+
+    &__name {
+      padding: 26px 0;
+    }
+
+    &__position {
+      padding: 4.5px 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;  
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .our-team-wrapper {
+    .our-team {
+      &__square {
+        top: -5px;
+        left: -5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-team-wrapper {
+    .our-team {
+      &__header {
+        margin-bottom: 49px;
+      }
+      
+      &__column {
+        width: calc((100% - 40px) / 3);
+      }
+      
+      &__name {
+        padding: 14px 0;
+      }
+      
+      &__position {
+        padding: 1.5px 0;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  } 
+}
+
+@media (max-width: 790px) {
+  .our-team-wrapper {
+    padding: 29px 16px 58px;
+      
+    .our-team {
+      &__header {
+        margin-bottom: 19px;
+      }
+      
+      &__content {
+        flex-direction: column;
+        gap: 31px;
+      }
+      
+      &__column {
+        width: 100%;
+      }
+      
+      &__img-container {
+        position: relative;
+      }
+      
+      &__img {
+        width: 100%;
+      }
+      
+      &__square {
+        display: block;
+        max-width: 168px;
+        max-height: 42px;
+        background: transparent;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+      }
+      
+      &__socials {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      &__icon {
+        width: 25%;
+      }
+      
+      &__name {
+        padding: 14px 0;
+      }
+    }
+  }
+}
