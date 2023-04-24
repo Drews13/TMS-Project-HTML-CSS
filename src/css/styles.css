@@ -22,7 +22,7 @@ ul {
   margin: auto;
 }
 
-.footer-wrapper .footer, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
+.footer-wrapper .footer, .all-devices-wrapper .all-devices-background .all-devices, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
   max-width: 1170px;
   margin: auto;
 }
@@ -307,7 +307,7 @@ p {
   background-position: center;
 }
 .main-banner-wrapper .main-banner-background {
-  padding: 11.52vw 11.19% 0;
+  padding: 10.37vw 10.07% 0;
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
   opacity: 0.9;
 }
@@ -638,6 +638,70 @@ p {
   }
   .amazing-services-wrapper .amazing-services__item-desc {
     padding: 6.5px 0;
+  }
+}
+.all-devices-wrapper {
+  background-image: url("../public/img/all-devices/background.svg");
+  background-size: cover;
+  background-position: center;
+}
+.all-devices-wrapper .all-devices-background {
+  padding: 2.46vw 10.07% 3.34vw;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.all-devices-wrapper .all-devices-background .all-devices__header {
+  margin-bottom: 3.46vw;
+}
+.all-devices-wrapper .all-devices-background .all-devices__content {
+  position: relative;
+}
+.all-devices-wrapper .all-devices-background .all-devices__img-frame {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.all-devices-wrapper .all-devices-background .all-devices__img-frame-phone {
+  position: relative;
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.all-devices-wrapper .all-devices-background .all-devices__img-tablet {
+  position: absolute;
+  top: 3.43%;
+  left: 21.71%;
+  width: 56.33%;
+}
+.all-devices-wrapper .all-devices-background .all-devices__img-phone {
+  position: absolute;
+  width: 17.09%;
+  bottom: -18.45%;
+  right: 17.1%;
+  z-index: 2;
+}
+
+@media (max-width: 790px) {
+  .all-devices-wrapper .all-devices-background {
+    padding: 13.49375vw 16px 7.8125vw;
+  }
+  .all-devices-wrapper .all-devices-background .all-devices__header {
+    margin-bottom: 11.45vw;
+  }
+  .all-devices-wrapper .all-devices-background .all-devices__img-frame {
+    display: none;
+  }
+  .all-devices-wrapper .all-devices-background .all-devices__img-frame-phone {
+    display: block;
+  }
+  .all-devices-wrapper .all-devices-background .all-devices__img-tablet {
+    top: 4.57%;
+    left: 2.08%;
+    width: 95.14%;
+  }
+  .all-devices-wrapper .all-devices-background .all-devices__img-phone {
+    width: 29.56%;
+    bottom: -24.7%;
+    right: 10.03%;
   }
 }
 .footer-wrapper {
