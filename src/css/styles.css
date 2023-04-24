@@ -22,7 +22,7 @@ ul {
   margin: auto;
 }
 
-.footer-wrapper .footer, .all-devices-wrapper .all-devices-background .all-devices, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
+.footer-wrapper .footer, .service-wrapper .service, .all-devices-wrapper .all-devices-background .all-devices, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
   max-width: 1170px;
   margin: auto;
 }
@@ -154,6 +154,10 @@ p {
   }
   h2 {
     font-size: 36px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 15px;
   }
   .section__separator {
     max-width: 134px;
@@ -702,6 +706,161 @@ p {
     width: 29.56%;
     bottom: -24.7%;
     right: 10.03%;
+  }
+}
+.service-wrapper {
+  padding: 42px 16px 114px;
+}
+.service-wrapper .service__header {
+  margin-bottom: 42px;
+}
+.service-wrapper .service__content {
+  display: flex;
+  justify-content: space-between;
+}
+.service-wrapper .service__img {
+  width: calc((100% - 30px) / 2);
+}
+.service-wrapper .service__item-list {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-wrapper .service__item {
+  border: 1px solid #C6CBCD;
+}
+.service-wrapper .service__item_active .service__item-title {
+  padding: 31.5px 0;
+  border-bottom: 1px solid #C6CBCD;
+}
+.service-wrapper .service__item_active .service__item-arrow_up {
+  display: block;
+}
+.service-wrapper .service__item_active .service__item-arrow_down {
+  display: none;
+}
+.service-wrapper .service__item_active .service__item-body {
+  display: block;
+}
+.service-wrapper .service__item-header {
+  position: relative;
+}
+.service-wrapper .service__item-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 18px;
+}
+.service-wrapper .service__item-title {
+  padding: 32px 0;
+}
+.service-wrapper .service__item-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 20px;
+}
+.service-wrapper .service__item-arrow_up {
+  display: none;
+}
+.service-wrapper .service__item-body {
+  display: none;
+  padding: 18.5px 24px 18.5px 24px;
+}
+.service-wrapper .service__item-desc {
+  padding-right: 61px;
+  max-height: 126px;
+  overflow-y: auto;
+}
+.service-wrapper .service__item-desc::-webkit-scrollbar {
+  width: 7px;
+}
+.service-wrapper .service__item-desc::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+.service-wrapper .service__item-desc::-webkit-scrollbar-thumb {
+  background-color: #95E1D3;
+}
+
+@media (max-width: 1120px) {
+  .service-wrapper .service__img {
+    width: calc((100% - 20px) / 2);
+    min-width: 445px;
+  }
+  .service-wrapper .service__item-list {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 1024px) {
+  .service-wrapper {
+    padding: 86px 16px 88px;
+  }
+  .service-wrapper .service__header {
+    margin-bottom: 36px;
+  }
+  .service-wrapper .service__item-list {
+    width: calc(100% - 465px);
+  }
+  .service-wrapper .service__item_active .service__item-title {
+    padding: 28px 0;
+  }
+  .service-wrapper .service__item-icon {
+    width: 36px;
+    left: 15px;
+  }
+  .service-wrapper .service__item-title {
+    padding: 28.5px 0;
+  }
+  .service-wrapper .service__item-arrow {
+    width: 36px;
+    right: 12px;
+  }
+  .service-wrapper .service__item-body {
+    padding: 21px 20px 21px 21px;
+  }
+  .service-wrapper .service__item-desc {
+    padding-right: 52px;
+    max-height: 96px;
+  }
+  .service-wrapper .service__item-desc::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+@media (max-width: 790px) {
+  .service-wrapper {
+    padding: 52px 16px 31px;
+  }
+  .service-wrapper .service__header {
+    margin-bottom: 29px;
+  }
+  .service-wrapper .service__content {
+    flex-direction: column;
+    gap: 29px;
+  }
+  .service-wrapper .service__img {
+    width: 100%;
+  }
+  .service-wrapper .service__item-list {
+    width: 100%;
+    gap: 19px;
+  }
+  .service-wrapper .service__item_active .service__item-title {
+    padding: 30.5px 0;
+  }
+  .service-wrapper .service__item-title {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 31px 0;
+  }
+  .service-wrapper .service__item-arrow {
+    right: 10px;
+  }
+  .service-wrapper .service__item-body {
+    padding: 9px 25px 9px 21px;
+  }
+  .service-wrapper .service__item-desc {
+    max-height: 120px;
   }
 }
 .footer-wrapper {
