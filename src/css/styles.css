@@ -22,7 +22,7 @@ ul {
   margin: auto;
 }
 
-.footer-wrapper .footer, .map-wrapper .map, .happy-clients-wrapper .happy-clients-background .happy-clients, .partners-wrapper .partners, .our-team-wrapper .our-team, .service-wrapper .service, .all-devices-wrapper .all-devices-background .all-devices, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
+.footer-wrapper .footer, .map-wrapper .map, .our-stories-wrapper .our-stories, .happy-clients-wrapper .happy-clients-background .happy-clients, .partners-wrapper .partners, .our-team-wrapper .our-team, .service-wrapper .service, .all-devices-wrapper .all-devices-background .all-devices, .amazing-services-wrapper .amazing-services, .futures-wrapper .futures, .about-wrapper .about, .main-banner-wrapper .main-banner-background .main-banner, .header-wrapper .header {
   max-width: 1170px;
   margin: auto;
 }
@@ -154,10 +154,6 @@ p {
   }
   h2 {
     font-size: 36px;
-  }
-  p {
-    font-size: 13px;
-    line-height: 15px;
   }
   .section__separator {
     max-width: 134px;
@@ -1383,6 +1379,143 @@ p {
   .happy-clients-wrapper .happy-clients-background .happy-clients__client-decs {
     text-align: center;
     padding: 16px 0;
+  }
+}
+.our-stories-wrapper {
+  padding: 5.47vw 16px;
+}
+.our-stories-wrapper .our-stories__header {
+  margin-bottom: 2.74vw;
+}
+.our-stories-wrapper .our-stories__content {
+  display: flex;
+  justify-content: space-between;
+}
+.our-stories-wrapper .our-stories__column {
+  width: calc((100% - 60px) / 3);
+}
+.our-stories-wrapper .our-stories__column-image-container {
+  position: relative;
+}
+.our-stories-wrapper .our-stories__column-image {
+  width: 100%;
+}
+.our-stories-wrapper .our-stories__column-square {
+  background-color: #95E1D3;
+  width: 21.62%;
+  height: 31.62%;
+  position: absolute;
+  left: -3.78%;
+  top: 58.5%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.our-stories-wrapper .our-stories__column-square-num {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+.our-stories-wrapper .our-stories__column-square-mon {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.our-stories-wrapper .our-stories__column-title {
+  padding: 6px 0;
+  margin-top: 30px;
+}
+.our-stories-wrapper .our-stories__column-desc {
+  padding: 7.5px 0;
+  margin-bottom: 22px;
+}
+.our-stories-wrapper .our-stories__column-icon-container {
+  display: flex;
+  gap: 4.32%;
+  align-items: center;
+}
+.our-stories-wrapper .our-stories__column-icon-container span {
+  font-size: 13px;
+  font-weight: 400;
+  width: 14.05%;
+}
+.our-stories-wrapper .our-stories__column-icon {
+  width: 8.65%;
+}
+
+@media (max-width: 1024px) {
+  .our-stories-wrapper .our-stories__column {
+    width: calc((100% - 40px) / 3);
+  }
+  .our-stories-wrapper .our-stories__column-image {
+    width: 100%;
+  }
+  .our-stories-wrapper .our-stories__column-num {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .our-stories-wrapper .our-stories__column-mon {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .our-stories-wrapper .our-stories-title {
+    padding: 6.5px 0;
+    margin-top: 26px;
+  }
+  .our-stories-wrapper .our-stories-desc {
+    padding: 18.5px 0;
+    margin-bottom: 20px;
+  }
+  .our-stories-wrapper .our-stories-icon-container span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 790px) {
+  .our-stories-wrapper {
+    padding: 29px 16px;
+  }
+  .our-stories-wrapper .our-stories__header {
+    margin-bottom: 36px;
+  }
+  .our-stories-wrapper .our-stories__content {
+    flex-direction: column;
+    gap: 29px;
+  }
+  .our-stories-wrapper .our-stories__column {
+    width: 100%;
+  }
+  .our-stories-wrapper .our-stories__column-image-container {
+    position: relative;
+  }
+  .our-stories-wrapper .our-stories__column-image {
+    width: 100%;
+  }
+  .our-stories-wrapper .our-stories__column-square {
+    min-width: 68px;
+    min-height: 68px;
+    left: 0;
+  }
+  .our-stories-wrapper .our-stories__column-square-title {
+    padding: 6.5px 0;
+    margin-top: 26px;
+  }
+  .our-stories-wrapper .our-stories__column-square-desc {
+    padding: 15.5px 0;
+    margin-bottom: 20px;
+  }
+  .our-stories-wrapper .our-stories__column-square-icon-container {
+    gap: 4.32%;
+  }
+  .our-stories-wrapper .our-stories__column-square-icon-container span {
+    font-size: 13px;
+    font-weight: 400;
+    width: 14.05%;
+  }
+  .our-stories-wrapper .our-stories__column-square-icon {
+    width: 8.65%;
   }
 }
 .map-wrapper {
