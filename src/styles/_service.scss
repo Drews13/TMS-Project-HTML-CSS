@@ -27,25 +27,39 @@
     &__item {
       border: 1px solid $border-color;
 
-      &_active {
+      // &_active {
+      //   .service__item-title {
+      //     padding: 31.5px 0;
+      //     border-bottom: 1px solid $border-color;
+      //   }
+
+      //   .service__item-arrow {
+      //     transform: translate(0, -50%) rotate(180deg);
+      //   }
+
+      //   .service__item-body {
+      //     display: block;
+      //   }
+      // }
+    }
+
+    &__radio {
+      display: none;
+
+      &:checked + label {
         .service__item-title {
           padding: 31.5px 0;
           border-bottom: 1px solid $border-color;
         }
-
+  
         .service__item-arrow {
-          &_up {
-            display: block;
-          }
-
-          &_down {
-            display: none;
-          }
+          transform: translate(0, -50%) rotate(180deg);
         }
-
+  
         .service__item-body {
           display: block;
         }
+        
       }
     }
 
@@ -69,10 +83,6 @@
       top: 50%;
       transform: translate(0, -50%);
       right: 20px;
-
-      &_up {
-        display: none;
-      }
     }
     
     &__item-body {
