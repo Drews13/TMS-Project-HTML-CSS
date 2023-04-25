@@ -1,0 +1,160 @@
+.happy-clients-wrapper {
+  background-image: url("../public/img/happy-clients/unsplash_-qrcOR33ErA.svg");
+  background-size: cover;
+  background-position: center;
+
+  .happy-clients-background {
+    background-color: $map-background;
+    padding: 2.74vw 16px;
+
+    .happy-clients {
+      @extend %limiting-container;
+
+      &__header {
+        margin-bottom: 2.74vw;
+      }
+        
+      &__content {
+        display: flex;
+        justify-content: space-between;
+        row-gap: 42px;
+        flex-wrap: wrap;
+      }
+
+      &__client {
+        width: calc((100% - 70px)/2);
+        display: flex;
+        justify-content: space-between;
+
+        &-img {
+          width: 23.64%;
+          align-self: flex-start;
+        }
+
+        &-info {
+          width: calc(76.36% - 50px);
+        }
+
+        &-name {
+          padding: 12px 0;
+          text-align: left;
+        }
+
+        &-position {
+          font-size: 18px;
+          line-height: 19px;
+          font-weight: 400;
+        }
+
+        &-separator {
+          max-width: 70px;
+          height: 4px;
+          margin: 2.08vw 0;
+          background-color: $primary-color;
+        }
+
+        &-decs {
+          padding: 22.5px 0;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21px;            
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .happy-clients-wrapper {
+    .happy-clients-background {
+      .happy-clients {
+        &__content {
+          row-gap: 28px;
+        }
+
+        &__client {
+          width: calc((100% - 50px)/2);
+      
+          &-info {
+            width: calc(76.36% - 48px);
+          }
+      
+          &-name {
+            padding: 7px 0;
+          }
+      
+          &-position {
+            font-size: 14px;
+            line-height: 14px;
+          }
+      
+          &-separator {
+            max-width: 47px;
+            height: 4px;
+          }
+      
+          &-decs {
+            padding: 19px 0;
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .happy-clients-wrapper {
+    .happy-clients-background {
+      padding: 29px 16px;
+      
+      .happy-clients {
+        &__header {
+          margin-bottom: 29px;
+        }
+              
+        &__content {
+          display: flex;
+          justify-content: space-between;
+          row-gap: 29px;
+          flex-wrap: wrap;
+        }
+      
+        &__client {
+          width: 100%;
+          flex-direction: column;
+          gap: 21px;
+
+          &-img {
+            width: 88px;
+            margin: auto;
+          }
+      
+          &-info {
+            width: 100%;
+          }
+      
+          &-name {
+            text-align: center;
+          }
+      
+          &-position {
+            text-align: center;
+          }
+      
+          &-separator {
+            max-width: 134px;
+            height: 4px;
+            margin: 21px auto;
+          }
+      
+          &-decs {
+            text-align: center;
+            padding: 16px 0;
+          }
+        }
+      }
+    }
+  }
+}
