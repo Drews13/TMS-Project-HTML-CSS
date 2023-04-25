@@ -26,21 +26,6 @@
 
     &__item {
       border: 1px solid $border-color;
-
-      // &_active {
-      //   .service__item-title {
-      //     padding: 31.5px 0;
-      //     border-bottom: 1px solid $border-color;
-      //   }
-
-      //   .service__item-arrow {
-      //     transform: translate(0, -50%) rotate(180deg);
-      //   }
-
-      //   .service__item-body {
-      //     display: block;
-      //   }
-      // }
     }
 
     &__radio {
@@ -59,7 +44,6 @@
         .service__item-body {
           display: block;
         }
-        
       }
     }
 
@@ -137,8 +121,8 @@
         width: calc(100% - 465px);
       }
   
-      &__item {
-        &_active {
+      &__radio {
+        &:checked + label {
           .service__item-title {
             padding: 28px 0;
           }
@@ -198,8 +182,8 @@
         gap: 19px;
       }
       
-      &__item {
-        &_active {
+      &__radio {
+        &:checked + label {
           .service__item-title {
             padding: 30.5px 0;
           }

@@ -832,7 +832,7 @@ p {
   .service-wrapper .service__item-list {
     width: calc(100% - 465px);
   }
-  .service-wrapper .service__item_active .service__item-title {
+  .service-wrapper .service__radio:checked + label .service__item-title {
     padding: 28px 0;
   }
   .service-wrapper .service__item-icon {
@@ -875,7 +875,7 @@ p {
     width: 100%;
     gap: 19px;
   }
-  .service-wrapper .service__item_active .service__item-title {
+  .service-wrapper .service__radio:checked + label .service__item-title {
     padding: 30.5px 0;
   }
   .service-wrapper .service__item-title {
