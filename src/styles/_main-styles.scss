@@ -28,6 +28,7 @@
 
 body {
   font-family: Raleway;
+  color: $font-primary-color;
 }
 
 h1 {
@@ -126,6 +127,11 @@ p {
   h5 {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  h6 {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   p {
