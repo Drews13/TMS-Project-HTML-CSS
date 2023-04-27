@@ -72,6 +72,7 @@
     }
 
     &__icon {
+      cursor: pointer;
       width: 100%;
     }
 
@@ -96,6 +97,7 @@
     }
 
     &__btn {
+      cursor: pointer;
       background-color: $quaternary-color;
       color: $white-color;
       font-size: 18px;
@@ -143,6 +145,7 @@
       }
 
       &-title {
+        cursor: pointer;
         padding: 3.5px 0;
         font-weight: 700;
       }
@@ -167,10 +170,12 @@
     }
 
     &__inst {
+      cursor: pointer;
       width: 100%;
     }
 
     &__underline {
+      cursor: pointer;
       padding: 38px 0;
       font-size: 13px;
       font-weight: 400;

@@ -14,6 +14,7 @@
 
     &__logo {
       max-height: 100px;
+      cursor: pointer;
     }
 
     &__burger-checkbox {
@@ -22,10 +23,12 @@
 
     &__burger {
       display: none;
+      cursor: pointer;
     }
 
     &__cross {
       display: none;
+      cursor: pointer;
     }
 
     &__navbar {

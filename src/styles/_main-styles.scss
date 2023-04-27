@@ -64,6 +64,10 @@ body {
   color: $font-primary-color;
 }
 
+.content-wrapper {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: Montserrat;
   font-size: 144px;

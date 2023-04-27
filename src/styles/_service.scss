@@ -49,6 +49,7 @@
 
     &__item-header {
       position: relative;
+      cursor: pointer;
     }
 
     &__item-icon {
@@ -175,6 +176,7 @@
       
       &__img {
         width: 100%;
+        min-width: 0;
       }
       
       &__item-list {
